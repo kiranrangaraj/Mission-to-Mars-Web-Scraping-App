@@ -15,6 +15,7 @@ Python Requests/Splinter, BeautifulSoup, and Pandas, and MongoDB were used to sc
 ### A. Scraping
 
 * Created a Jupyter Notebook file called `mission_to_mars.ipynb` and used this to complete all of the scraping and analysis.
+* Used Splinter to navigate the sites and BeautifulSoup to find and parse out the necessary data.
 
     ### 1. NASA Mars News
 
@@ -46,7 +47,7 @@ Python Requests/Splinter, BeautifulSoup, and Pandas, and MongoDB were used to sc
 * Used MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above.
 * Converted the Jupyter notebook into a Python script called `scrape_mars.py` with a function called `scrape` that runs all of the scraping code from above and returns one Python dictionary containing all of the scraped data.
 * Created a route called `/scrape` that will import the `scrape_mars.py` script and call the `scrape` function.
-    * Stored the return value in Mongo as a Python dictionary.
+* Stored the returned value in Mongo as a Python dictionary.
 * Created a root route `/` that queried the Mongo database and passed the Mars data into an HTML template to display the data.
 * Created a template HTML file called `index.html` takes the Mars data dictionary and displayed all of the data in the appropriate HTML elements.
 
@@ -58,10 +59,25 @@ Python Requests/Splinter, BeautifulSoup, and Pandas, and MongoDB were used to sc
   <img src="Mission-to-Mars_screenshot.png" width="800">
 </p>
 
-## Hints
+---
 
-* Use Splinter to navigate the sites when needed and BeautifulSoup to help find and parse out the necessary data.
+## Data Sources ##
+* [NASA Mars News Site](https://mars.nasa.gov/news/)
+* [Jet Propulsion Laboratory](https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars)
+* [Mars Facts](https://space-facts.com/mars/)
+* [USGS Astrogeology](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars)
 
-* Use Pymongo for CRUD applications for your database. For this homework, you can simply overwrite the existing document each time the `/scrape` url is visited and new data is obtained.
+---
 
-* Use Bootstrap to structure your HTML template.
+## Technologies Used ##
+* Python - Pandas, Splinter/Requests, BeautifulSoup, Flask, PyMongo, Datetime
+* Jupyter Notebook
+* PyCharm - Python IDE
+* MongoDB
+* HTML, CSS
+* Bootstrap
+
+---
+
+## Author ##
+Kiran Rangaraj - LinkedIn: [@Kiran Rangaraj](https://www.linkedin.com/in/kiranrangaraj/)
