@@ -6,7 +6,7 @@
 
 This project developed a website that scrapes the latest news and data on Mars from the following sources: NASA Mars News Site, Jet Propulsion Laboratory, Space Facts, and USGS Astrogeology.
 
-Python Requests/Splinter, BeautifulSoup, and Pandas, and MongoDB were used to scrape and store the required data, and Python Flask was used to automate those processes. HTML and Bootstrap CSS were used to generate and format the completed webpage presenting the scraped data.
+Python Requests/Splinter, BeautifulSoup, Pandas, as well as MongoDB were used to scrape and store the required data, and Python Flask was used to automate those processes. HTML and Bootstrap CSS were used to generate and format the completed webpage presenting the scraped data.
 
 ---
 
